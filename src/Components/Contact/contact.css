@@ -1,0 +1,209 @@
+.contact
+{
+  
+    height: 36rem;
+    margin-top: 2rem;
+
+}
+
+.contactPage
+{
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactTitle
+{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    
+}
+
+.contactDesc
+{
+   
+    font-size: medium;
+    font-weight: 300; 
+
+}
+
+.contactFrom
+{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+   
+}
+
+.name,.email,.msg
+{
+    font-size: medium;
+    width: 100%;
+    height: auto;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background: rgb(40, 40, 40);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 4px 1px rgba(0,0,0,.2);
+}
+
+.submitBtn
+{
+
+    
+    padding: 0.5rem 3rem;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    background: white;
+    font-weight: bolder;
+    transition: transform 0.5s;
+
+
+}
+
+.submitBtn:hover
+{
+  
+    transform: scale(1.1);
+    
+}   
+
+.links
+{
+    margin:2rem auto;
+
+}
+
+.linkedin
+{
+    height: 4rem;
+    width: 4rem;
+    transition: transform 0.5s;
+}
+.linkedin:hover
+{
+    transform: scale(1.2);
+}
+.github
+{
+    height: 4.2rem;
+    width: 4.2rem;
+    margin: 0 1rem;
+    transition: transform 0.5s;
+}
+.github:hover
+{
+    transform: scale(1.2);
+}
+.insta
+{
+    height: 3.8rem;
+    width: 3.8rem;
+    margin-top: 5px;
+    transition: transform 0.5s;
+}
+.insta:hover
+{
+    transform: scale(1.2);
+}
+
+
+.twitter
+{
+    height: 3.3rem;
+    width: 3.3rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    margin-bottom: 5px;
+    transition: transform 0.5s;
+    
+
+}
+.twitter:hover
+{
+    transform: scale(1.2);
+}
+
+
+
+.gmail
+{
+    height: 3.8rem;
+    width: 3.8rem;
+   margin-bottom: 5px;
+   transition: transform 0.5s;
+    
+}
+.gmail:hover
+{
+    transform: scale(1.2);
+}
+
+.contactForm
+{
+    color: white;
+}
+
+@media screen and (max-width:840px)
+{
+    .contact
+    {
+       /* padding: 0 4rem;
+       padding-left: 4.7rem; */
+       margin: auto auto;
+    
+       height: fit-content;
+       
+
+    }
+
+    .formC
+    {
+        width: 90vw;
+        margin: 0 auto;
+       
+    }
+   
+    .name,.email,.msg
+{
+    font-size: medium;
+    width:80vw;
+    height: auto;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background: rgb(40, 40, 40);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 4px 1px rgba(0,0,0,.2);
+}
+
+
+    .contactDesc
+    {
+        
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        margin: 0 auto;
+    }
+}

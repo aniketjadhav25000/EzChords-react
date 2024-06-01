@@ -1,0 +1,215 @@
+.intro
+{
+   height: calc(100vh - 2rem);
+   width: 100vw;
+   max-width: 75rem;
+   margin : 0 auto; 
+   overflow: hidden;
+   margin-top: 4rem;
+   position: relative;
+}
+
+.bg
+{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+    width: 80vh;
+    border-radius: 3rem;
+    margin-top:0px;
+    margin-right: -75px;
+    
+    
+
+}
+
+
+.introContent
+{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hello
+{
+    font-size: 2rem;
+    font-weight: 100;
+    padding: auto;
+}
+
+.introname
+{
+    color: yellow;
+}
+
+.introPara
+{
+    font-size: medium;
+    font-weight: 300;
+    display: flex;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    width: 50vw;
+    
+}
+
+.btn
+{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-color: black;
+    border-radius: 2rem; 
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+   
+}
+.btn:hover{
+    transform: scale(1.2);
+   
+}
+
+.btnImg
+{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+    
+}
+
+.typewriter
+{
+    width: 28rem;
+    
+
+}
+
+@media screen and (max-width:840px) {
+    .bg{
+        right: 18vw;
+        height: 40vh;
+        width : 70vw;
+        margin-top: 4rem;
+        padding: 0;
+       
+    }
+
+    .introContent{
+        font-size: 1rem;
+        padding: 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    
+    .intro
+    {
+        /* margin : 5rem auto;
+        width: 135vw;
+        height:60rem; */
+        margin: 0 auto;
+        height:fit-content; 
+        width: 90vw;
+        display: flex
+    ;
+       
+    }
+    .introPara
+    {
+       
+        width: 90vw;
+        margin-left: 0.5rem;
+    }
+
+    .introUppernames
+    {
+        
+        width: 65vw;
+        padding: 0;
+        margin-top: 2rem;
+        
+    }
+
+    .introname
+    {
+        margin: 0 1rem;
+        
+        padding: 0 0.5rem;
+    }
+
+    .typewriter
+    {
+        width: 100vw;
+        max-width: 100vw;
+        
+    }
+
+    .introText
+    {
+        font-size: 2.5rem;
+    }
+
+    .introname
+    {
+        font-size: 3rem;
+    
+    }
+
+    .webDev
+    {
+        font-size: 3rem;
+    }
+    .btn
+    {
+       font-size: 1.2rem; 
+    }
+
+    .typewriter
+    {
+        width: 40rem;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    
+   font-size: 3rem;
+    border-right: 2px solid;
+    height: 4.5rem;
+    
+}
+.typewriter::after {
+    content: '|';
+    display: inline-block;
+    width: 0;
+    color: yellow;
+    animation: cursorBlink 0.7s 1s infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+    
+

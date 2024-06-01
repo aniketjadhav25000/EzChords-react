@@ -1,0 +1,41 @@
+.footercontent
+{
+   
+    box-shadow: 2px 5px 4px 1px rgba(0,0,0,.2);
+    height: fit-content;
+}
+
+.footer
+{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    margin: auto auto ;
+}
+
+@media screen and (max-width:840px) {
+    .footercontent
+    {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .footer
+    {
+        margin: 0  auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        
+    }
+}

@@ -1,0 +1,279 @@
+.navbar
+{
+    height: 4rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0 ;
+    z-index: 3;
+    background : rgb(30, 30, 30);
+    
+} 
+
+.logo
+{
+    object-fit: cover;
+    height: 4/5rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.desktopMenuListItem
+{
+    margin: 1rem;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: white; /* Set your desired text color */
+    padding: 10px 20px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.desktopMenuListItem::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Set the initial height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color:yellow; /* Set your desired underline color */
+    transform-origin: bottom left; /* Set the transform origin to bottom left */
+    transform: scaleX(0); /* Initially set the scaleX to 0 for animation */
+    transition: transform 0.3s ease;
+    
+}
+.desktopMenuListItem:hover::after
+{
+    transform: scaleX(1);
+}
+.form-check-label
+{
+    color: white;
+}
+
+.desktopMenuBtn
+{
+    height: 2.5rem;
+    width: 10rem;
+    background-color: yellow;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 0 1rem;
+    border-radius: 2rem ;
+    cursor: pointer;
+    opacity: 0.6;
+  
+}
+.desktopMenuBtn:hover
+{
+   
+    transform: scale(1.2); 
+    opacity: 1 
+    
+}
+
+.DesktopMenuImg 
+{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 10px;
+}
+
+.active
+{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.NavMenu
+{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.listItem
+{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+
+}
+
+.MobMenu
+{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+/* Add this CSS to your stylesheet or component */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .ArrowUP
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index:  9999;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+    background-color: yellow;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+.ArrowUP:hover
+{
+  transform: scale(0.91);
+}
+
+.arrowup
+{
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.9;
+}
+
+.alert
+ {
+    position: fixed;
+    top: 56px; /* Height of the navbar */
+    width: 100%;
+    z-index: 1000;
+
+    background-color: yellow;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: none;
+    
+  }
+
+  .AlertBtn
+  {
+    padding: 0 0.5rem;
+    border-radius:10px;
+    margin: 0 1rem;
+  }
+
+@media  screen and (max-width:750px)
+{
+    .MobMenu
+    {
+        display: flex;
+    }    
+    .desktoMenu
+    {
+        display: none;
+    }
+    .desktopMenuBtn
+    {
+        display: none;
+    }
+    .navbar
+    {
+        margin: 0 auto;
+    }
+    .ArrowUP
+    {
+        margin:1rem  ;
+        position: fixed;
+    }
+
+    .alert
+    {
+        width: 100vw;
+        max-width: 96vw;
+        margin: 0.5rem 0.5rem;
+        font-weight: bolder;
+        display:flex;
+      
+    }
+    .AlertBtn
+    {
+        padding:0.5rem 1.4rem;
+    }
+}
+
